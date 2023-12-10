@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная страница</title>
+
+    <!--Подключение css файлов-->
+    <link rel="stylesheet" href="css/main_stile.css">
+    <link rel="stylesheet" href="css/hadder.css">
+    <link rel="stylesheet" href="css/recBotton.css">
+    <link rel="stylesheet" href="css/vizit.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+        </script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <section class="for_button">
+        <div class="wrap">
+        <button class="button" id="submitButton">Запись</button>
+        </div>
+        </section>
+<header class="header">
+    
+    <div class="contaner">
+        <div class="header_body">
+            <a href="login.html" class="header_logo">
+                <p><img src="favicon.png"></p>
+            </a>
+            <div class="header_burger">
+                <span>
+                </span>
+            </div>
+            <nav class="header_menu" > <!--Навигация по сайту-->
+                <ul class="header_list">
+                    <li><a data-goto=".section_1" href="#" class="navigation">Главная</a></li>
+                    <li><a data-goto=".services2" class="navigation">Услуги</a></li>
+                    <li><a data-goto=".prise_list"   class="navigation">Прайс лист</a></li>
+                    <li><a data-goto=".section_4" href="https://yandex.ru/maps/org/olga/1327711804/?ll=37.286809%2C55.665140&z=13" class="navigation">Адрес</a></li>
+                    <li><a href="tel:89268111152" class="navigation tel">+7 (926) 811-11-52</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="wow animate__animated animate__fadeInUp"><div class="columns" style="margin-top: 150px;">
+    <div class="sections">
+    <div class="viz_text">
+        <h1 class="naming_start">Ольга</h1>
+    </div>
+    
+    <div class="column2">
+        <img class="logo" src="logo.png" width="480"></div>
+    <div class="column1" style="margin-left: 8px;"> <h id="firsttext">
+        Добро пожаловать в наш уютный салон красоты! Мы создаем неповторимые образы, подчеркивая вашу естественную красоту. Наши профессиональные стилисты и мастера маникюра готовы порадовать вас первоклассным обслуживанием. Расслабьтесь, наслаждайтесь удивительным опытом красоты и доверьтесь заботе наших экспертов. Вместе мы создадим ваш уникальный стиль, подчеркнем индивидуальность и оставим вас с восторженными впечатлениями. Добро пожаловать в мир красоты и уюта!</h>
+    </div>
+    <div class="column3"><img id="firstpic" src="images/salon_olga_odi_1701614515905.jpeg"></div>
+    <div class="column4"></div>
+    <div class="column5"><img id="firstpic" src="images/salon_olga_odi_1701614533617.jpeg"></div>
+    <div class="column6"></div>
+    </div>
+</div>
+</section>
+<section style="background-color:#c8c8a9;" id="services" >
+    
+    <div class="sections services2"  style="margin-top: 100px;">
+    <div class="element-animation wow animate__animated animate__fadeInUp" style="width: 100%; height: 550px; background: #83af9b; margin-top: 200px; ">
+        
+        <button class="button_stend wow animate__animated animate__heartBeat" onclick="changeImage('images/image1.jpg');changeText('Косметология:\nДайте своей коже заботу, которую она заслуживает. Наши профессиональные косметологи предлагают широкий спектр услуг для поддержания здоровья и красоты вашей кожи. От ультрасовременных процедур до ухода за проблемной кожей - доверьте свое лицо нам.')">Косметология</button>
+        <button class="button_stend wow animate__animated animate__heartBeat" onclick="changeImage('images/image2.jpg');changeText('Стрижки:\n Преобразите свой облик с нашими опытными стилистами. Мы предоставляем индивидуальные стрижки, которые подчеркивают ваш стиль и подходят вашей личности. От современных трендов до классических образов - мы создадим идеальную стрижку для вас.')">Стрижки</button>
+        <button class="button_stend wow animate__animated animate__heartBeat" onclick="changeImage('images/image3.jpg');changeText('Маникюр:\n Ухоженные руки - визитная карточка каждой женщины. Предлагаем вам наши услуги маникюра, включая классические и гель-лаковые маникюры, дизайн ногтей и уход за кутикулой. Доверьтесь нашим мастерам, чтобы создать невероятные ногти.')">Маникюр</button>
+        <button class="button_stend wow animate__animated animate__heartBeat" onclick="changeImage('images/salon_olga_odi_1701614506885.jpeg');changeText('Педикюр:\nВаши стопы заслуживают особого внимания. Предоставьте им роскошный уход с нашими услугами педикюра. От расслабляющих процедур до эффективного удаления огрубевшей кожи - дарите своим стопам заботу и красоту.')">Педикюр</button>
+        <br>
+        <hr class="hr-line">
+    <div style="width: 60%; float: left;"><img class="images_service" id="displayed-image" src="images/image1.jpg" alt="Изображение 1"></div>
+    <div style="width: 40%;margin-left: 60%;"> <h id="text">Косметология:<br>Дайте своей коже заботу, которую она заслуживает. Наши профессиональные косметологи предлагают широкий спектр услуг для поддержания здоровья и красоты вашей кожи. От ультрасовременных процедур до ухода за проблемной кожей - доверьте свое лицо нам.<h></div>
+        <button  class="button_stend wow animate__animated animate__heartBeat" onclick ="gotoservice()"> Подробнее</button>
+    </div>
+
+    
+    <div class="sections prise_list">
+    <div id="according1" class="accordion wow animate__animated animate__backInLeft"><span>косметология</span></div>
+    <div class="content"><table style="width: 100%;">
+        <tr>
+            <th style="text-size-adjust: 12px;">услуги</th>
+            <th>цены от:</th>
+        </tr>
+        <tr>
+            <th>ламинирование бровей</th><th>300 руб</th>
+        </tr>
+        <tr>
+            <th>отращивание бровей</th><th>300 руб</th>
+        </tr>
+        <tr>
+            <th>отращивание ресниц</th><th>300 руб</th>
+        </tr>
+        <tr>
+            <th>прокалывание ушей</th><th>1200 руб</th>
+        </tr>
+        <tr>
+            <th>пилинги</th><th>1500 руб</th>
+        </tr><tr>
+            <th>гигиена лица(комбинированная)</th><th>2500 руб</th>
+        </tr><tr>
+            <th>биоэпиляция(воск, шугаринг)</th><th>400 руб</th>
+        </tr>
+    </table></div>
+    <div id="according2" class="accordion wow animate__animated animate__backInRight"><span>стрижки</span></div>
+    <div class="content"><table style="width: 100%;">
+        <tr>
+            <th style="text-size-adjust: 12px;">услуги</th>
+            <th>цены от:</th>
+        </tr>
+        <tr>
+            <th>стрижки мужские</th><th>500 руб</th>
+        </tr>
+        <tr>
+            <th>стрижка "фейд"</th><th>700 руб</th>
+        </tr>
+        <tr>
+            <th>стрижка "площадка"</th><th>600 руб</th>
+        </tr>
+        <tr>
+            <th>моделирование бороды</th><th>500 руб</th>
+        </tr><tr>
+            <th>стрижка женская короткая</th><th>600 руб</th>
+        </tr><tr>
+            <th>стрижка женская средняя</th><th>700 руб</th>
+        </tr><tr>
+            <th>стрижка женская длинная</th><th>800 руб</th>
+        </tr><tr>
+            <th>стрижка коре</th><th>900 руб</th>
+        </tr><tr>
+            <th>мелирование на шапочку</th><th>400 руб</th>
+        </tr><tr>
+            <th>мелирование на фольгу</th><th>500 руб</th>
+        </tr><tr>
+            <th>окрашивание волос</th><th>400 руб</th>
+        </tr>
+    </table> </div>
+    <div id="according3" class="accordion wow animate__animated animate__backInLeft"><span>маникюр</span></div>
+    <div class="content"><table style="width: 100%;">
+        <tr>
+            <th style="text-size-adjust: 12px;">услуги</th>
+            <th>цены от:</th>
+        </tr>
+        <tr>
+            <th>женский маникюр</th><th>500 руб</th>
+        </tr>
+        <tr>
+            <th>мужской маникюр</th><th>600 руб</th>
+        </tr><tr>
+            <th>маникюр + покрытие гель лак</th><th>1300 руб</th>
+        </tr><tr>
+            <th>снятие покрытия гель лак</th><th>300 руб</th>
+        </tr><tr>
+            <th>наращивание ноктей + покрытие гель лак</th><th>2500 руб</th>
+        </tr>
+    </table> </div>
+    <div id="according4" class="accordion wow animate__animated animate__backInRight"><span>педикюр</span></div>
+    <div class="content"><table style="width: 100%;">
+        <tr>
+            <th style="text-size-adjust: 12px;">услуги</th>
+            <th>цены от:</th>
+        </tr>
+        <tr>
+            <th>перикюр женский</th><th>1500 руб</th>
+        </tr>
+        <tr>
+            <th>педикюр мужской</th><th>3000 руб</th>
+        </tr><tr>
+            <th>педикюр + покртыие гель лак</th><th>2450 руб</th>
+        </tr>
+    </table></div></div>
+
+</section>
+
+
+    <div class="marquee_img">
+    <div>
+        <span>
+            <img  src="images/salon_olga_odi_1701614506885.jpeg">
+            <img  src="images/salon_olga_odi_1701614513583.jpeg">
+            <img  src="images/salon_olga_odi_1701614515905.jpeg">
+            <img  src="images/salon_olga_odi_1701614573584.jpeg">
+            <img src="images/salon_olga_odi_1701614533617.jpeg" >
+            <img src="images/salon_olga_odi_1701615342661.jpeg" >
+        </span>
+        <span>
+            <img src="images/salon_olga_odi_1701614660371.jpeg" >
+            <img src="images/salon_olga_odi_1701615033050.jpeg" >
+            <img src="images/salon_olga_odi_1701614693034.jpeg" >
+            <img src="images/salon_olga_odi_1701615347321.jpeg" >
+            <img src="images/salon_olga_odi_1701615342661.jpeg" >
+            <img src="images/salon_olga_odi_1701615339093.jpeg" >
+        </span>
+        
+    </div>
+    </div>
+    <div class="sections">
+    <a class="button_stend" style="position:relative;top: -10px;" href="images.html">подробнее</a>
+    </div>
+    <footer>
+    <div class="footer_class">
+        <div class="footer_adres">
+            <div class="arrow">
+                <div class="arrow-7">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li><p>ОДИНЦОВО, ВЕРХНЕ-ПРОЛЕТАРСКАЯ, Д.27</p></li>
+                <li><p>ПН-СБ: 9:00-20:00, ВС: 10-20:00</p></li>
+                <li><a href="https://yandex.ru/maps/-/CDU2aA9R" target="_blank" class="footer_src">НА КАРТЕ</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>

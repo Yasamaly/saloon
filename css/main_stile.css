@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Marck+Script&display=swap');
+body {
+    background-color: #f9cdad;
+}
+html {
+    opacity: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+    transition: all 1.5s;
+}
+
+
+* {
+    font-family: Comfortaa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Убираем расстояние от объектов до края экрана*/
+body{
+    margin: 0px;
+    height: 100%;
+}
+.sections{
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+.marquee_img span{
+width: 100%;
+display: flex;
+justify-content: space-around ;
+}
+.marquee_img{
+    
+    margin: 1px auto;
+    overflow: hidden;
+}
+.marquee_img div{
+    width: 300%;
+    display: flex;
+    animation: marquee_img 10s linear infinite;
+    
+}
+.marquee_img img {
+    width: 15%;
+}
+.marquee_img:hover div{
+    animation-play-state: paused;
+}
+section{
+    margin-bottom: 300px ;
+}
+/*Блокируем прокрутку при вызове адаптивного меню*/
+body._lock {
+    overflow: hidden;
+}
+@keyframes marquee_img{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}

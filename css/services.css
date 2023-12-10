@@ -1,0 +1,72 @@
+/*css файл для работы с секцией услуг*/
+
+.services {
+    background: cadetblue;
+}
+
+.name {
+    text-align: center;
+    padding: 50px 0px 25px;
+}
+.images_service{
+     max-width: 90%;height: auto; border-radius: 100px; padding: 25px;  top: 10%;
+}
+.button_stend{
+    border-radius: 1000px;
+    padding: 15px;
+    margin: 10px;
+    color: #ffffff;
+    transition-duration: 0.4s;
+    background-color: #fe4365;
+}
+.button_stend:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+.hr-line{
+    margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+	width: 95%;
+}
+
+#firstpic{
+    
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    
+}
+#firsttext{
+   
+}
+.columns {
+    overflow: hidden; /* Чтобы содержимое не выходило за пределы блока */
+  }
+  .column2 {
+    float: left;
+    width: 49%; /* Желаемая ширина первой колонки */
+  }
+  .column1 {
+    float: right;
+    width: 50%; /* Желаемая ширина второй колонки */
+  }
+  .column4 {
+    float: left;
+    width: 25%; /* Желаемая ширина первой колонки */
+  }
+  .column3 {
+    float: right;
+    width: 30%; /* Желаемая ширина второй колонки */
+  }
+  .column5 {
+    float: left;
+    width: 20%; /* Желаемая ширина первой колонки */
+  }
+  .column6 {
+    float: right;
+    width: 25%; /* Желаемая ширина второй колонки */
+  }
